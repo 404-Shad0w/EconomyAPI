@@ -54,10 +54,6 @@ class EconomyAPI
         return true;
     }
 
-    /**
-     * Transfiere saldo de un jugador a otro.
-     * Retorna un array con 'success' y 'message'.
-     */
     public static function deposit(string $sender, string $receiver, float $amount): array
     {
         self::checkInit();
